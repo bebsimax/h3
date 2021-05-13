@@ -1,0 +1,8 @@
+name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
+nymphs,5,2,0,1,2,4,6,16,32,35,0,Teleportation.Immune to ice
+crew mates,7,4,0,2,4,15,5,9,23,110,0,None
+pirates,8,6,4,3,7,15,6,7,14,225,0,Shoots.No melee penalty
+stormbirds,10,8,0,6,9,30,9,4,11,275,0,Flies
+sea witches,12,7,12,10,14,35,6,3,6,515,0,Shoots.Casts Weekness after a shot (Basic level)
+nix,13,16,0,18,22,80,6,2,4,1000,0,Ignores 30% of enemy's attack skill
+sea serpents,22,16,0,30,55,180,9,1,2,2200,1,Poisonous
