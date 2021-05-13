@@ -1,8 +1,0 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-oceanids,6,2,0,1,2,4,8,16,32,45,0,Teleportation.Immune to ice
-seamen,8,6,0,3,4,15,6,9,23,140,0,None
-sea dogs,12,11,12,3,7,15,8,7,14,375,0,Shoots.No melee penalty.No enemy retaliation.Accurate Shot
-ayssids,11,8,0,6,10,30,11,4,11,325,0,Flies.Ferocity
-sorceresses,12,9,12,10,16,35,7,3,6,565,0,Shoots.Casts Weekness after a shot (Advanced level)
-nix warriors,14,17,0,18,22,90,7,2,4,1300,0,Ignores 60% of enemy's attack skill
-haspids,29,20,0,30,55,300,12,1,2,4000,2,Poisonous.Revenge

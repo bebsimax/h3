@@ -1,8 +1,0 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-centaurs,5,3,0,2,3,8,6,14,28,70,0,None
-dwarves,6,7,0,2,4,20,3,8,18,120,0,20% chance to resist a hostile spell
-wood elves,9,5,24,3,5,15,6,7,14,200,0,Shoots
-pegasi,9,8,0,5,9,30,8,4,8,250,0,Flies.Enemy pay 2 extra spell points per spell
-dendriod guards,9,12,0,12,14,55,3,3,6,350,0,Binds enemies in place
-unicorns,15,14,0,18,22,90,7,2,4,850,0,Increases nearby units chances to resist hostile magic by 20%.Blinding attack
-green dragons,18,18,0,40,50,180,10,1,2,2400,1,Flies.Breath attack.Immune to spell levels 1-3

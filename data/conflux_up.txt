@@ -1,8 +1,0 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-sprites,2,2,0,1,3,3,9,20,50,30,0,Flies.No enemy retaliation
-storm elementals,9,9,24,2,8,25,8,6,12,275,0,Immune to Meteor Shower.Vulnerable to Lightning and Armageddon.+100% damage to earth elementals. Casts Protection from Air
-ice elementals,8,10,24,3,7,30,6,6,12,375,0,Immune to ice.Vulnerable to Fireball.Inferno and Armageddon.+100% damage to fire elementals.Casts Protection from Water
-energy elementals,12,8,0,4,6,35,8,5,10,400,0,Elemental.Fire immunity.Ice vulnerability.+100% damage to water elementals.Casts Protection from Fire
-magma elementals,11,11,0,6,10,40,6,4,8,500,0,Elemental.Immune to Lightning and Armageddon.Vulnerable to Meteor Shower.+100% damage to air elementals.Casts Protection from Earth
-magic elementals,15,13,0,15,25,80,9,2,4,1200,0,Elemental.Attacks all adjacent enemies without retalitation.Spell immunity.-50% damage to creatures with mind spell immunity
-phoenixes,12,18,0,30,40,200,21,1,3,3000,1,Flies.Breath attack.Fire spell immunity.Rebirth

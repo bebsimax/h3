@@ -1,8 +1,0 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-familiars,4,4,0,1,2,4,7,15,38,60,0,Magic channel
-magogs,7,4,24,2,4,13,6,8,16,175,0,Shoots.Fireball attack
-cerberi,10,8,0,2,7,25,8,5,13,250,0,3-headed attack.No enemy retaliation
-horned demons,10,10,0,7,9,40,6,4,8,270,0,None
-pit lords,13,13,0,13,17,45,7,3,6,700,0,Summon demons from a dead ally
-efreet sultans,16,14,0,16,24,90,13,2,4,1100,0,Flies.Fire shield.Immune to fire.Hates Genies
-arch devils,26,28,0,30,40,200,17,1,2,4500,2,Teleportation.-2 enemy luck.No enemy retaliation.Hates angels

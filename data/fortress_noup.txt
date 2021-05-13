@@ -1,8 +1,0 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-gnolls,3,5,0,2,3,6,4,12,30,50,0,None
-lizardmen,5,6,12,2,3,14,4,9,18,110,0,Shoots
-serpent flies,7,9,0,2,5,20,9,8,16,220,0,Flies.Dispels beneficial spells
-basilisks,11,11,0,6,10,35,5,4,8,325,0,Petrifying attack
-gorgons,10,14,0,12,16,70,5,3,6,525,0,None
-wyverns,14,14,0,14,18,70,7,2,4,800,0,Flies
-hydras,16,18,0,24,45,175,5,1,2,2200,0,Attacks all adjacent enemies without retaliation

@@ -1,8 +1,0 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-halberdiers,6,5,0,2,3,10,5,14,28,75,0,Immune to jousting bonus
-marksmen,6,3,24,2,3,10,6,9,18,150,0,Shoots twice
-royal griffinds,9,9,0,3,6,25,9,7,17,240,0,Flies.Unlimited retaliations
-crusaders,12,12,0,7,10,35,6,4,8,400,0,Strikes twice
-zealots,12,10,24,10,12,30,7,3,6,450,0,Shoots.No melee penalty
-champions,16,16,0,20,25,100,9,2,4,1200,0,Jousting bonus
-archangels,30,30,0,50,50,250,18,1,2,5000,3,Flies.+1 morale.Hates devils.Resurrects allies

@@ -3,9 +3,12 @@ import matplotlib.pyplot as plt
 import os
 
 
-
+#paths to dictioneries
 here = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.join(here, 'data')
+units_data_path = os.path.join(data_path, 'units')
+towns_data_path = os.path.join(units_data_path, 'towns')
+
 
 town_colors = {
     'castle': 'crimson',
@@ -18,8 +21,7 @@ town_colors = {
     'fortress': 'hotpink',
     'conflux': 'yellow',
     'cove': 'slategray'}
-towns_noup = {}
-towns_up = {}
+
 
 town_noup_gold_cost = {
     'castle': 21680,
@@ -46,27 +48,23 @@ town_up_gold_cost = {
     'cove': 30075
 }
 
+#units as dataframes
+towns_noup = {}
+towns_up = {}
 
-def get_image(name):
-    icon_path = os.path.join(here, 'icons')
-    img = plt.imread(os.path.join(icon_path, name+'.png'))
-    return img
-
-
-for filename in os.listdir(data_path):
+for filename in os.listdir(towns_data_path):
     split = filename.split('_')
     if 'no' in split[1]:
-        towns_noup.update({split[0]: pd.read_csv(os.path.join(data_path, filename))})
+        towns_noup.update({split[0]: pd.read_csv(os.path.join(towns_data_path, filename))})
     else:
-        towns_up.update({split[0]: pd.read_csv(os.path.join(data_path, filename))})
+        towns_up.update({split[0]: pd.read_csv(os.path.join(towns_data_path, filename))})
 
-
-
-
+neutral_units = pd.read_csv(os.path.join(units_data_path, 'neutral.txt'))
 
 def check(town):
     for i in range(len(town)):
         current = town.iloc[i]
+
         if current['ammo']>0:
             print(f'{current["name"]} shoot')
 
@@ -79,9 +77,3 @@ def check(town):
             print(f'{current["name"]} block retaliation')
 
 
-'''
-print(current_town)
-print(current_town['max_growth'])
-check(current_town)
-print(max_gold_cost(current_town))
-'''

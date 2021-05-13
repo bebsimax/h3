@@ -1,8 +1,0 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-gnoll marauders,4,6,0,2,3,6,5,12,30,70,0,None
-lizard warriors,6,8,24,2,5,15,5,9,18,140,0,Shoots
-dragon flies,8,10,0,2,5,20,13,8,16,240,0,Flies.Dispels beneficial spells. Weakens enemies
-greater basilisk,12,12,0,6,10,40,7,4,8,400,0,Petrifying attack
-mighty gorgons,11,16,0,12,16,70,6,3,6,600,0,Death stare
-wyvern monarchs,14,14,0,18,22,70,11,2,4,1100,0,Flies.Poisonous
-chaos hydras,18,20,0,25,45,250,7,1,2,3500,1,Attacks all adjacent enemies without retaliation
