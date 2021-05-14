@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-
+import matplotlib.patches as mpatches
 
 #paths to dictioneries
 here = os.path.dirname(os.path.abspath(__file__))
@@ -22,6 +22,12 @@ town_colors = {
     'conflux': 'yellow',
     'cove': 'slategray',
     'neutral': 'darkkhaki'}
+
+
+legend_elements = []
+
+for name, color in town_colors.items():
+    legend_elements.append(mpatches.Patch(color=color, label=name))
 
 
 town_noup_gold_cost = {
