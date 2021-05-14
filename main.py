@@ -20,7 +20,8 @@ town_colors = {
     'stronghold': 'turquoise',
     'fortress': 'hotpink',
     'conflux': 'yellow',
-    'cove': 'slategray'}
+    'cove': 'slategray',
+    'neutral': 'darkkhaki'}
 
 
 town_noup_gold_cost = {
@@ -59,9 +60,11 @@ for filename in os.listdir(towns_data_path):
     else:
         towns_up.update({split[0]: pd.read_csv(os.path.join(towns_data_path, filename))})
 
-neutral_units = pd.read_csv(os.path.join(units_data_path, 'neutral.txt'))
+neutral_units = {'neutral': pd.read_csv(os.path.join(units_data_path, 'neutral.txt'))}
 
-def check(town):
+units = (neutral_units, towns_noup, towns_up)
+
+def check_overall(town):
     for i in range(len(town)):
         current = town.iloc[i]
 
@@ -75,5 +78,10 @@ def check(town):
             print(f'{current["name"]} have horde building')
         if "enemy retaliation" in current['special']:
             print(f'{current["name"]} block retaliation')
+
+
+def check_target(unit, attribute):
+    if unit[attribute]>0:
+        print(f'{unit["name"]} shoots')
 
 
