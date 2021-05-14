@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 import matplotlib.patches as mpatches
-
+pd.options.mode.chained_assignment = None
 #paths to dictioneries
 here = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.join(here, 'data')
@@ -10,24 +10,27 @@ units_data_path = os.path.join(data_path, 'units')
 towns_data_path = os.path.join(units_data_path, 'towns')
 
 
+#town_colors = ['crimson', 'royalblue', 'tan', 'limegreen', 'orange', 'purple', 'turquoise', 'hotpink', 'yellow', 'slategray', 'darkkhaki']
+
 town_colors = {
     'castle': 'crimson',
-    'rampart': 'royalblue',
-    'tower': 'tan',
-    'inferno': 'limegreen',
-    'necropolis': 'orange',
-    'dungeon': 'purple',
-    'stronghold': 'turquoise',
-    'fortress': 'hotpink',
     'conflux': 'yellow',
     'cove': 'slategray',
+    'dungeon': 'purple',
+    'fortress': 'hotpink',
+    'inferno': 'limegreen',
+    'necropolis': 'orange',
+    'rampart': 'royalblue',
+    'stronghold': 'turquoise',
+    'tower': 'tan',
     'neutral': 'darkkhaki'}
 
+fraction_name_list = ["castle", "rampart", "tower", "inferno", "necropolis", "dungeon", "stronghold", "fortress", "conflux", "cove", "neutral"]
 
-legend_elements = []
+#legend_elements = []
 
-for name, color in town_colors.items():
-    legend_elements.append(mpatches.Patch(color=color, label=name))
+#for name, color in town_colors.items():
+#    legend_elements.append(mpatches.Patch(color=color, label=name))
 
 
 town_noup_gold_cost = {
