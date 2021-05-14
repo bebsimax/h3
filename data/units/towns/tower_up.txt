@@ -1,8 +1,8 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-master gremlins,4,4,8,1,2,4,5,16,32,40,0,Shoots
-obsidian gargoyles,7,7,0,2,3,16,9,9,24,160,0,Bloodless.Flies
-iron golems,9,10,0,4,5,35,5,6,12,200,0,Golem. Damage from spells reduced by 75%
-arch magi,12,9,24,7,9,30,7,4,8,450,0,Shoots.No barrier penalty.No melee penalty.Hero spells cost 2 spell points less
-master genies,12,12,0,13,16,40,11,3,6,600,0,Flies.Spellcaster: Random benefit.Hates Efreet
-naga gueens,16,13,0,30,30,110,7,2,4,1600,0,No enemy retaliation
-titans,24,24,24,40,60,300,11,1,2,5000,2,Shoots.No melee penalty.Mind spell immunity.Hates Black Dragons
+name,fraction,tier,state,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
+master gremlins,tower,1,upgraded,4,4,8,1,2,4,5,16,32,40,0,Shoots
+obsidian gargoyles,tower,2,upgraded,7,7,0,2,3,16,9,9,24,160,0,Bloodless.Flies
+iron golems,tower,3,upgraded,9,10,0,4,5,35,5,6,12,200,0,Golem. Damage from spells reduced by 75%
+arch magi,tower,4,upgraded,12,9,24,7,9,30,7,4,8,450,0,Shoots.No barrier penalty.No melee penalty.Hero spells cost 2 spell points less
+master genies,tower,5,upgraded,12,12,0,13,16,40,11,3,6,600,0,Flies.Spellcaster: Random benefit.Hates Efreet
+naga gueens,tower,6,upgraded,16,13,0,30,30,110,7,2,4,1600,0,No enemy retaliation
+titans,tower,7,upgraded,24,24,24,40,60,300,11,1,2,5000,2,Shoots.No melee penalty.Mind spell immunity.Hates Black Dragons

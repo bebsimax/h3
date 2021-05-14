@@ -1,8 +1,8 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-skeletons,5,4,0,1,3,6,4,12,30,60,0,Undead
-walking dead,5,5,0,2,3,15,3,8,16,100,0,Undead
-wights,7,7,0,3,5,18,5,7,14,200,0,Undead.Flies.Regenerating
-vampires,10,9,0,5,8,30,6,4,8,360,0,Undead.Flies.No enemy retaliation
-liches,13,10,12,11,13,30,6,3,6,550,0,Undead.Shoots.Death cloud attack
-black knights,16,16,0,15,30,120,7,2,4,1200,0,Undead.Curses enemies
-bone dragons,17,15,0,25,50,150,9,1,2,1800,0,Undead.Flies.-1 to enemy morale
+name,fraction,tier,state,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
+skeletons,necropolis,1,basic,5,4,0,1,3,6,4,12,30,60,0,Undead
+walking dead,necropolis,2,basic,5,5,0,2,3,15,3,8,16,100,0,Undead
+wights,necropolis,3,basic,7,7,0,3,5,18,5,7,14,200,0,Undead.Flies.Regenerating
+vampires,necropolis,4,basic,10,9,0,5,8,30,6,4,8,360,0,Undead.Flies.No enemy retaliation
+liches,necropolis,5,basic,13,10,12,11,13,30,6,3,6,550,0,Undead.Shoots.Death cloud attack
+black knights,necropolis,6,basic,16,16,0,15,30,120,7,2,4,1200,0,Undead.Curses enemies
+bone dragons,necropolis,7,basic,17,15,0,25,50,150,9,1,2,1800,0,Undead.Flies.-1 to enemy morale

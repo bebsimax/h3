@@ -1,8 +1,8 @@
-name,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
-goblins,4,2,0,1,2,5,5,15,38,40,0,None
-wolf riders,7,5,0,2,4,10,6,9,18,100,0,None
-orcs,8,4,12,2,5,15,4,7,14,150,0,Shoots
-ogres,13,7,0,6,12,40,4,4,8,300,0,None
-rocs,13,11,0,11,15,60,7,3,6,600,0,Flies
-cyclops,15,12,16,16,20,70,6,2,4,750,0,Shoots.Attack siege walls
-behemoths,17,17,0,30,50,160,6,1,2,1500,0,Ignores 40% of enemy's defense skill
+name,fraction,tier,state,attack,defense,ammo,damage_min,damage_max,health,speed,growth,max_growth,gold_cost,lux_cost,special
+goblins,stronghold,1,basic,4,2,0,1,2,5,5,15,38,40,0,None
+wolf riders,stronghold,2,basic,7,5,0,2,4,10,6,9,18,100,0,None
+orcs,stronghold,3,basic,8,4,12,2,5,15,4,7,14,150,0,Shoots
+ogres,stronghold,4,basic,13,7,0,6,12,40,4,4,8,300,0,None
+rocs,stronghold,5,basic,13,11,0,11,15,60,7,3,6,600,0,Flies
+cyclops,stronghold,6,basic,15,12,16,16,20,70,6,2,4,750,0,Shoots.Attack siege walls
+behemoths,stronghold,7,basic,17,17,0,30,50,160,6,1,2,1500,0,Ignores 40% of enemy's defense skill

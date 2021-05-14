@@ -55,20 +55,9 @@ town_up_gold_cost = {
     'cove': 30075
 }
 
-#units as dataframes
-towns_noup = {}
-towns_up = {}
 
-for filename in os.listdir(towns_data_path):
-    split = filename.split('_')
-    if 'no' in split[1]:
-        towns_noup.update({split[0]: pd.read_csv(os.path.join(towns_data_path, filename))})
-    else:
-        towns_up.update({split[0]: pd.read_csv(os.path.join(towns_data_path, filename))})
+units = pd.read_csv(os.path.join(units_data_path, 'all_units.txt'))
 
-neutral_units = {'neutral': pd.read_csv(os.path.join(units_data_path, 'neutral.txt'))}
-
-units = (neutral_units, towns_noup, towns_up)
 
 def check_overall(town):
     for i in range(len(town)):
@@ -84,7 +73,6 @@ def check_overall(town):
             print(f'{current["name"]} have horde building')
         if "enemy retaliation" in current['special']:
             print(f'{current["name"]} block retaliation')
-
 
 def check_target(unit, attribute):
     if unit[attribute]>0:
