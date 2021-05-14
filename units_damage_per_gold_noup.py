@@ -1,4 +1,4 @@
-from main import towns_noup, town_colors
+from main import towns_noup, town_colors, legend_elements
 from operator import itemgetter
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -23,4 +23,8 @@ for unit_name, value, town_name in list_of_damage_per_gold:
     plt.barh(unit_name, value, color=town_colors[town_name], align='edge', height=0.6)
 else:
     plt.xlabel('Avarage damage per 5000 gold')
+    plt.yticks(fontsize=8)
+    plt.legend(handles=legend_elements)
+    fig = plt.gcf()
+    fig.set_size_inches(18.5, 10.5)
     plt.show()
