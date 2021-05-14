@@ -5,4 +5,4 @@ dragon flies,8,10,0,2,5,20,13,8,16,240,0,Flies.Dispels beneficial spells. Weaken
 greater basilisk,12,12,0,6,10,40,7,4,8,400,0,Petrifying attack
 mighty gorgons,11,16,0,12,16,70,6,3,6,600,0,Death stare
 wyvern monarchs,14,14,0,18,22,70,11,2,4,1100,0,Flies.Poisonous
-chaos hydras,18,20,0,25,45,250,7,1,2,3500,1,Attacks all adjacent enemies without retaliation
+chaos hydras,18,20,0,25,45,250,7,1,2,3500,1,Attacks all adjacent enemies without retaliation.No enemy retaliation

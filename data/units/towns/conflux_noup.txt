@@ -4,5 +4,5 @@ air elementals,9,9,0,2,8,25,7,6,12,250,0,Elemental.Immune to Meteor Shower.Vulne
 water elementals,8,10,0,3,7,30,5,6,12,300,0,Elemental.Immune to ice.Vulnerable to Fireball.Inferno and Armageddon.+100% damage to fire elementals
 fire elementals,10,8,0,4,6,35,6,5,10,350,0,Elemental.Fire immunity.Ice vulnerability.+100% damage to water elementals
 earth elementals,10,10,0,4,8,40,4,4,8,400,0,Elemental.Immune to Lightning and Armageddon.Vulnerable to Meteor Shower.+100% damage to air elementals
-psychic elementals,15,13,0,10,20,75,7,2,4,950,0,Elemental.Attacks all adjacent enemies without retalitation.-50% damage to creatures with mind spell immunity
+psychic elementals,15,13,0,10,20,75,7,2,4,950,0,Elemental.Attacks all adjacent enemies without retalitation.No enemy retaliation.-50% damage to creatures with mind spell immunity
 firebirds,18,18,0,30,40,150,15,1,3,2000,0,Flies.Breath attack.Damage from fire spells reduced by 50%
