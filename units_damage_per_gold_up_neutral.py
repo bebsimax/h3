@@ -1,38 +1,22 @@
-from main import units, town_colors, legend_elements
+from main import units, town_colors
 from operator import itemgetter
 import pandas as pd
 import matplotlib.pyplot as plt
 
 
-units_up_and_neutral = [units[0], units[2]]
+
 set_gold = 5000
-list_of_damage_per_gold=[]
-for faction in units_up_and_neutral:
-    for key, value in faction.items():
-        for i in range(len(value)):
-            unit_name = value.iloc[i]['name']
-            unit_min_damage = value.iloc[i]['damage_min']
-            unit_max_damage = value.iloc[i]['damage_max']
-            unit_attack = value.iloc[i]['attack']
-            unit_cost = value.iloc[i]['gold_cost']
-            if unit_cost == 0:
-                continue
-            min_damage_per_gold = unit_min_damage*0.05*unit_attack/unit_cost
-            max_damage_per_gold = unit_max_damage*0.05*unit_attack/unit_cost
-            average_damage_per_gold = (min_damage_per_gold+max_damage_per_gold)/2
-            average_damage_per_set_gold = average_damage_per_gold * set_gold
-            list_of_damage_per_gold.append([unit_name, round(average_damage_per_set_gold, 4), key])
-else:
-    list_of_damage_per_gold = sorted(list_of_damage_per_gold, key=itemgetter(1), reverse=True)
-
-
-for unit_name, value, town_name in list_of_damage_per_gold:
-    plt.barh(unit_name, value, color=town_colors[town_name], align='edge', height=0.6)
-else:
-    plt.xlabel('Avarage damage per 5000 gold')
-    plt.yticks(fontsize=8)
-    plt.legend(handles = legend_elements)
-    fig = plt.gcf()
-    fig.set_size_inches(18.5, 10.5)
-
-    plt.show()
+states = ['upgraded', 'neutral']
+def set_avarage_damage(row):
+    if row["gold_cost"] == 0:
+        return 0
+    if "twice" in row["special"]:
+        return ((row["damage_min"] * 0.05 * row["attack"]) + (row["damage_max"] * 0.05 * row["attack"])) /row["gold_cost"] * set_gold
+    else:
+        return ((row["damage_min"] * 0.05 * row["attack"]) + (row["damage_max"] * 0.05 * row["attack"])) /2 /row["gold_cost"] * set_gold
+units = units.query(f'state == "{states[0]}" or state == "{states[1]}"')
+units = units.assign(avarage_damage=units.apply(set_avarage_damage, axis=1))
+units = units.sort_values(by="avarage_damage", ascending=False)
+units.plot(x=0, y=16, kind='barh', figsize=(16.5, 8.5), ylabel=f"damage per {set_gold} gold", xlabel="unit", legend=False,
+       title=f'upgraded and neutral units damage per {set_gold} gold')
+plt.show()
