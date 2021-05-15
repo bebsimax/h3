@@ -20,8 +20,8 @@ t = t.sort_values(by="%", ascending=False)
 indexes = t.index.values
 colors_in_order = [town_colors[town] for town in indexes]
 
-t.plot(y=2 ,kind='bar', color=colors_in_order, figsize=(18.5,10.5), xlabel="towns", ylabel="%", legend=False,
-       title='% of towns overall cost are units tiers 1-3', ylim=(20,35))
+t.plot(y=2, kind='bar', color=colors_in_order, figsize=(16.5, 8.5), xlabel="towns", ylabel="%", legend=False,
+       title='% of towns overall cost are units tiers 1-3', ylim=(20, 35))
 
 
 plt.show()

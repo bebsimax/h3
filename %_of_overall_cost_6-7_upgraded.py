@@ -1,21 +1,29 @@
-from main import towns_up, town_colors, town_up_gold_cost
-from operator import itemgetter
+from main import units, town_colors
 import matplotlib.pyplot as plt
+import pandas as pd
 
-to_plot=[]
-for town_name, town in towns_up.items():
-    cost = 0
-    for tier in range(5,7):
-        cost += town.iloc[tier]['gold_cost'] * town.iloc[tier]['max_growth']
-    else:
-        town_overall_cost = town_up_gold_cost[town_name]
-        town_color = town_colors[town_name]
-        to_plot.append([town_name, cost/town_overall_cost*100, town_color])
-else:
-    for name, value, color in sorted(to_plot, key=itemgetter(1), reverse=True):
-        plt.bar(name, value, color=color)
 
-plt.title("gold cost of units tier 6-7 / gold cost of all units")
-plt.ylabel("%")
+tiers = (1, 7)
+state = "upgraded"
+units = units.query(f'tier >= {tiers[0]} & tier <= {tiers[1]} & state == "{state}"')
+units["max_gold_cost"] = units.max_growth * units.gold_cost
+
+t = pd.DataFrame(index=[town for town in town_colors.keys() if town != 'neutral'])
+t["overall_gold_cost"] = units.groupby(["fraction"])['max_gold_cost'].sum()
+
+tiers = (6, 7)
+units = units.query(f'tier >= {tiers[0]} & tier <= {tiers[1]}')
+t["gold_cost13"] = units.groupby(["fraction"])['max_gold_cost'].sum()
+t["%"] = t.gold_cost13 / t.overall_gold_cost * 100
+t = t.sort_values(by="%", ascending=False)
+
+indexes = t.index.values
+colors_in_order = [town_colors[town] for town in indexes]
+
+t.plot(y=2, kind='bar', color=colors_in_order, figsize=(16.5, 8.5), xlabel="towns", ylabel="%", legend=False,
+       title='% of towns overall cost are units tiers 1-3', ylim=(30, 55))
+
+
 plt.show()
+
 
