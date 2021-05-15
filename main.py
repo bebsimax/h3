@@ -14,7 +14,7 @@ towns_data_path = os.path.join(units_data_path, 'towns')
 
 town_colors = {
     'castle': 'crimson',
-    'conflux': 'yellow',
+    'conflux': 'gold',
     'cove': 'slategray',
     'dungeon': 'purple',
     'fortress': 'hotpink',
