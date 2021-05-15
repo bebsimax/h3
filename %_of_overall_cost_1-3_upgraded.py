@@ -16,15 +16,13 @@ units = units.query(f'tier >= {tiers[0]} & tier <= {tiers[1]}')
 t["gold_cost13"] = units.groupby(["fraction"])['max_gold_cost'].sum()
 t["%"] = t.gold_cost13 / t.overall_gold_cost * 100
 t = t.sort_values(by="%", ascending=False)
-plt.figure(figsize=(18.5, 10.5))
-plt.title("% of overall cost of upgraded units tiers 1-3")
 
-for town in t.index.values:
-    plt.bar(x=town, height=t.loc[town]["%"], color=town_colors[town])
+indexes = t.index.values
+colors_in_order = [town_colors[town] for town in indexes]
 
-#x=list(t1.index.values)
-#y=t1["max_gold_cost"]
-#print(x, y)
+t.plot(y=2 ,kind='bar', color=colors_in_order, figsize=(18.5,10.5), xlabel="towns", ylabel="%", legend=False,
+       title='% of towns overall cost are units tiers 1-3', ylim=(20,35))
+
 
 plt.show()
 
