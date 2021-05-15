@@ -1,3 +1,4 @@
+'''
 from main import towns_noup, towns_up, town_colors
 from operator import itemgetter
 import pandas as pd
@@ -14,7 +15,10 @@ for key, value in towns_noup.items():
         unit_growth = value.iloc[i]['growth']
         min_damage_per_gold = unit_min_damage*0.05*unit_attack*unit_growth/unit_cost
         max_damage_per_gold = unit_max_damage*0.05*unit_attack*unit_growth/unit_cost
-        average_damage_per_gold = (min_damage_per_gold+max_damage_per_gold)/2
+        if "twice" in value.iloc[i]['special']:
+            average_damage_per_gold = (min_damage_per_gold + max_damage_per_gold)
+        else:
+            average_damage_per_gold = (min_damage_per_gold+max_damage_per_gold)/2
         list_of_damage_per_gold.append([unit_name, round(average_damage_per_gold,4), key])
 else:
     list_of_damage_per_gold = sorted(list_of_damage_per_gold, key=itemgetter(1), reverse=True)
@@ -25,3 +29,4 @@ for unit_name, value, town_name in list_of_damage_per_gold:
 else:
     plt.xlabel('Avarage damage per gold for basic growth')
     plt.show()
+'''
