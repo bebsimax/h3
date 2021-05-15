@@ -1,7 +1,8 @@
 from main import units, town_colors
-from operator import itemgetter
 import matplotlib.pyplot as plt
 import pandas as pd
+
+
 tiers = (1, 7)
 state = "upgraded"
 units = units.query(f'tier >= {tiers[0]} & tier <= {tiers[1]} & state == "{state}"')
