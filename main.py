@@ -25,7 +25,7 @@ town_colors = {
     'tower': 'tan',
     'neutral': 'darkkhaki'}
 
-fraction_name_list = ["castle", "rampart", "tower", "inferno", "necropolis", "dungeon", "stronghold", "fortress", "conflux", "cove", "neutral"]
+fraction_name_list = list(town_colors.keys())
 
 #legend_elements = []
 

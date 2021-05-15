@@ -1,4 +1,4 @@
-from main import towns_noup, town_colors, legend_elements
+from main import town_colors, legend_elements
 from operator import itemgetter
 import pandas as pd
 import matplotlib.pyplot as plt
