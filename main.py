@@ -8,7 +8,7 @@ here = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.join(here, 'data')
 units_data_path = os.path.join(data_path, 'units')
 towns_data_path = os.path.join(units_data_path, 'towns')
-
+chart_data_path = os.path.join(here, 'charts')
 
 #town_colors = ['crimson', 'royalblue', 'tan', 'limegreen', 'orange', 'purple', 'turquoise', 'hotpink', 'yellow', 'slategray', 'darkkhaki']
 
@@ -23,14 +23,14 @@ town_colors = {
     'rampart': 'royalblue',
     'stronghold': 'turquoise',
     'tower': 'tan',
-    'neutral': 'darkkhaki'}
+    'neutral': 'darkgoldenrod'}
 
 fraction_name_list = list(town_colors.keys())
 
-#legend_elements = []
+legend_elements = []
 
-#for name, color in town_colors.items():
-#    legend_elements.append(mpatches.Patch(color=color, label=name))
+for name, color in town_colors.items():
+    legend_elements.append(mpatches.Patch(color=color, label=name))
 
 
 town_noup_gold_cost = {
