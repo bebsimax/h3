@@ -18,7 +18,7 @@ def set_average_damage(row):
 
 units = units.query(f'state == "{states[0]}" or state == "{states[1]}"')
 units = units.assign(avg_dmg=units.apply(set_average_damage, axis=1))
-units["growths"] = set_damage / units.avg_dmg / units.max_growth
+units["growths"] = round(set_damage / units.avg_dmg / units.max_growth,0)
 units["gold_req"] = units.growths * units.gold_cost /1000
 print(units.head())
 #units = units.sort_values(by="average_damage", ascending=False)
@@ -29,7 +29,7 @@ units.sort_values('growths', ascending=True).plot(x=0, kind="barh", stacked=True
                                                   fontsize=6,
                                                   ylabel="growths and gold in thousands",
                                                   xticks=range(0,115,5),
-                                                  title=f"weeks of maximum growths and gold needed to reach {set_damage}")
+                                                  title=f"weeks of maximum growths and gold needed to reach {set_damage} damage")
 plt.show()
 '''
 for (gold, name), group in units.groupby(["gold_req", "fraction"]):
