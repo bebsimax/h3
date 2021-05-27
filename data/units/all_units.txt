@@ -36,6 +36,7 @@ nix,cove,6,basic,13,16,0,18,22,80,6,2,4,1000,0,Ignores 30% of enemy's attack ski
 sea serpents,cove,7,basic,22,16,0,30,55,180,9,1,2,2200,1,Poisonous
 oceanids,cove,1,upgraded,6,2,0,1,2,4,8,16,32,45,0,Teleportation.Immune to ice
 seamen,cove,2,upgraded,8,6,0,3,4,15,6,9,23,140,0,None
+corsairs,cove,3,upgraded,10,8,4,3,7,15,7,14,275,0,Shoots.No melee penalty.No enemy retaliation
 sea dogs,cove,3,upgraded,12,11,12,3,7,15,8,7,14,375,0,Shoots.No melee penalty.No enemy retaliation.Accurate Shot
 ayssids,cove,4,upgraded,11,8,0,6,10,30,11,4,11,325,0,Flies.Ferocity
 sorceresses,cove,5,upgraded,12,9,12,10,16,35,7,3,6,565,0,Shoots.Casts Weekness after a shot (Advanced level)
@@ -141,20 +142,20 @@ naga gueens,tower,6,upgraded,16,13,0,30,30,110,7,2,4,1600,0,No enemy retaliation
 titans,tower,7,upgraded,24,24,24,40,60,300,11,1,2,5000,2,Shoots.No melee penalty.Mind spell immunity.Hates Black Dragons
 peasants,neutral,1,neutral,1,1,0,1,1,1,3,25,25,10,0,None
 halflings,neutral,1,neutral,4,2,24,1,3,4,5,15,15,40,0,Shoots.Positive luck
-boars,neutral,2,neutral,6,5,0,2,3,15,6,8,8,150,0,None
 rogues,neutral,2,neutral,8,3,0,2,4,10,6,8,8,100,0,Spying
 leprechauns,neutral,2,neutral,8,5,0,3,5,15,5,9,9,100,0,Doubles friendly unit Luck chance.Casts Fortune
+boars,neutral,2,neutral,6,5,0,2,3,15,6,8,8,150,0,None
 nomads,neutral,3,neutral,9,8,0,2,6,30,7,7,7,200,0,Sandwalkers
 mummies,neutral,3,neutral,7,7,0,3,5,30,5,7,7,300,0,Undead.Curses enemies
-sharpshooters,neutral,4,neutral,12,10,32,8,10,15,9,4,4,400,0,Shoots.No Range or Barrier penalties
 satyrs,neutral,4,neutral,10,11,0,6,10,35,7,4,4,300,0,Casts Mirth
+sharpshooters,neutral,4,neutral,12,10,32,8,10,15,9,4,4,400,0,Shoots.No Range or Barrier penalties
 steel golems,neutral,4,neutral,10,11,0,6,8,45,6,4,4,400,0,Golem.Damage from spells reduced by 80%
 trolls,neutral,5,neutral,14,7,0,10,15,40,7,3,3,500,0,Regenerating
-gold golems,neutral,5,neutral,11,12,0,8,10,50,5,3,3,500,0,Golem.Damage from spells reduced by 85%
 fangarms,neutral,5,neutral,12,12,0,6,12,50,6,3,3,600,0,Flies.Mind spell immunity.Unlimited retaliations.Hypnotize
-enchanters,neutral,6,neutral,17,12,32,14,14,30,9,2,2,750,0,Shoots.No barrier penalty.No melee penalty.Goup spell casters
+gold golems,neutral,5,neutral,11,12,0,8,10,50,5,3,3,500,0,Golem.Damage from spells reduced by 85%
 diamond golems,neutral,6,neutral,13,12,0,12,14,60,5,3,3,750,0,Golem.Damage from spells reduced by 95%
+enchanters,neutral,6,neutral,17,12,32,14,14,30,9,2,2,750,0,Shoots.No barrier penalty.No melee penalty.Goup spell casters
+faerie dragons,neutral,7,neutral,20,20,0,20,30,500,15,1,1,10000,8,Flies.Offensive spell caster.Is protected by a magic mirror
 rust dragons,neutral,7,neutral,30,30,0,50,50,750,17,1,1,15000,14,Flies.Breath attack.Spits acid
 crystal dragons,neutral,7,neutral,40,40,0,60,75,800,16,1,1,20000,10,Crystal generation.20% chance to resist a hostile spell
-faerie dragons,neutral,7,neutral,20,20,0,20,30,500,15,1,1,10000,8,Flies.Offensive spell caster.Is protected by a magic mirror
 azure dragons,neutral,7,neutral,50,50,0,70,80,1000,19,1,1,30000,20,Flies.Breath attack.Fear.Immune to spell levels 1-3
