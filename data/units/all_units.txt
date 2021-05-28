@@ -36,7 +36,7 @@ nix,cove,6,basic,13,16,0,18,22,80,6,2,4,1000,0,Ignores 30% of enemy's attack ski
 sea serpents,cove,7,basic,22,16,0,30,55,180,9,1,2,2200,1,Poisonous
 oceanids,cove,1,upgraded,6,2,0,1,2,4,8,16,32,45,0,Teleportation.Immune to ice
 seamen,cove,2,upgraded,8,6,0,3,4,15,6,9,23,140,0,None
-corsairs,cove,3,upgraded,10,8,4,3,7,15,7,14,275,0,Shoots.No melee penalty.No enemy retaliation
+corsairs,cove,3,upgraded,10,8,4,3,7,15,7,7,14,275,0,Shoots.No melee penalty.No enemy retaliation
 sea dogs,cove,3,upgraded,12,11,12,3,7,15,8,7,14,375,0,Shoots.No melee penalty.No enemy retaliation.Accurate Shot
 ayssids,cove,4,upgraded,11,8,0,6,10,30,11,4,11,325,0,Flies.Ferocity
 sorceresses,cove,5,upgraded,12,9,12,10,16,35,7,3,6,565,0,Shoots.Casts Weekness after a shot (Advanced level)
