@@ -7,8 +7,10 @@ import os
 
 tiers = (1, 7)
 state = "upgraded"
-title_1 = '% of towns overall cost, units tiers 1-3'
+title_1 = '% of tier 1-3 units cost in overall towns cost'
 title_2 = 'gold cost of maximum growth for each town, units tiers 1-3'
+chart_name = title_1 + ' + ' + title_2
+
 fig, axes = plt.subplots(nrows=2, ncols=1)
 
 units_all_tiers = units.query(f'tier >= {tiers[0]} & tier <= {tiers[1]} & state == "{state}" & name != "corsairs"')
@@ -31,7 +33,6 @@ chart = t.plot(ax=axes[0], y=2, kind='bar', color=colors_in_order, figsize=(18, 
 
 tiers = (1, 3)
 state = "upgraded"
-title = "gold cost of maximum growth for each town, units tiers 1-3"
 
 units_tier_13_2 = units.query(f'tier >= {tiers[0]} & tier <= {tiers[1]} & state == "{state}" & name != "corsairs"')
 units_tier_13_2["max_gold_cost"] = units_tier_13_2.max_growth * units_tier_13_2.gold_cost
@@ -45,14 +46,14 @@ t_2 = t_2.sort_values(by="max_gold_cost", ascending=False)
 indexes = t_2.index.values
 colors_in_order = [town_colors[town] for town in indexes]
 
-chart_2 = t_2.plot(ax=axes[1], y=0, kind='bar', color=colors_in_order, figsize=(18, 10), xlabel="towns", ylabel="gold", legend=False,
-                   ylim=(6_000, 10_000), rot=0)
+chart_2 = t_2.plot(ax=axes[1], y=0, kind='bar', color=colors_in_order, figsize=(18, 10), xlabel="towns", ylabel="gold",
+                   legend=False, title=title_2, ylim=(6_000, 10_000), rot=0)
 
 
 
 
 fig = chart.get_figure()
-fig.savefig(os.path.join(chart_data_path, title_1 + '.png'))
+fig.savefig(os.path.join(chart_data_path, chart_name + '.png'))
 
 plt.show()
 
