@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 import seaborn
 
-title = 'Average damage per unit, upgraded versions + neutrals'
+title = 'Average damage vs 0 defense target, upgraded versions + neutrals'
 chart_name = title
 state = ['upgraded', 'neutral']
 
