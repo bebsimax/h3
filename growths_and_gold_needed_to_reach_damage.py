@@ -12,7 +12,7 @@ states = ['upgraded', 'neutral']
 
 units_up_and_neu = units.query(f'state == "{states[0]}" or state == "{states[1]}"')
 
-units_up_and_neu = units_up_and_neu.assign(avg_dmg=units_up_and_neu.apply(average_damage.avg_dmg_series, axis=1))
+units_up_and_neu = units_up_and_neu.assign(avg_dmg=units_up_and_neu.apply(average_damage.avg_dmg, axis=1))
 units_up_and_neu["growths"] = (set_damage / units_up_and_neu.avg_dmg / units_up_and_neu.max_growth).round(0)
 units_up_and_neu["gold_req"] = units_up_and_neu.growths * units_up_and_neu.gold_cost / 1000
 
