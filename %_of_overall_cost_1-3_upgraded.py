@@ -7,7 +7,7 @@ import os
 
 tiers = (1, 7)
 state = "upgraded"
-title = "'% of towns overall cost are units tiers 1-3'"
+title = '% of towns overall cost are units tiers 1-3'
 
 
 
