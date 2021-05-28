@@ -108,8 +108,8 @@ green dragons,rampart,7,basic,18,18,0,40,50,180,10,1,2,2400,1,Flies.Breath attac
 centaur captains,rampart,1,upgraded,6,3,0,2,3,10,8,14,28,90,0,None
 battle dwarves,rampart,2,upgraded,7,7,0,2,4,20,5,8,18,150,0,40% chance to resist a hostile spell
 grand elves,rampart,3,upgraded,9,5,24,3,5,15,7,7,14,225,0,Shoots twice
-silver pegasi,rampart,4,upgraded,9,10,0,5,9,30,12,4,8,275,0,Flies.Enemy pay 2 extra spell points per spell
-dendroid soldiers,rampart,5,upgraded,9,12,0,10,14,65,4,3,6,425,0,Binds enemies in place
+silver pegasi,rampart,4,upgraded,9,10,0,5,9,30,12,5,10,275,0,Flies.Enemy pay 2 extra spell points per spell
+dendroid soldiers,rampart,5,upgraded,9,12,0,10,14,65,4,3,8,425,0,Binds enemies in place
 war unicrons,rampart,6,upgraded,15,14,0,18,22,110,9,2,4,950,0,Increases nearby units chances to resist hostile magic by 20%.Blinding attack
 gold dragons,rampart,7,upgraded,27,27,0,40,50,250,16,1,2,4000,2,Flies.Breath attack.immune to spell levels 1-4
 goblins,stronghold,1,basic,4,2,0,1,2,5,5,15,38,40,0,None
