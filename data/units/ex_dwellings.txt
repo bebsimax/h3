@@ -1,0 +1,19 @@
+fraction,name,growth,max_growth
+nautral,Hovel,25,25
+nautral,Thatched Hut,15,15
+nautral,Rogue Cavern,8,8
+nautral,Alehouse,9,9
+nautral,Boar Glen,8,8
+nautral,Nomad Tent,7,7
+nautral,Tomb of Curses,7,7
+nautral,Wineyard,4,4
+nautral,Treetop Tower,4,4
+nautral,Troll Bridge,3,3
+nautral,Ziggurat,3,3
+nautral,Golem Factory,3,3
+nautral,Golem Factory,2,2
+nautral,Enchanter's Hollow,2,2
+nautral,Magic Forest,1,1
+nautral,Sulfurous Lair,1,1
+nautral,Crystal Cave,1,1
+nautral,Frozen Cliffs,1,1
