@@ -1,0 +1,142 @@
+fraction,name,growth,max_growth,gold_cost,wood_cost,ore_cost,mercury_cost,sulfur_cost,crystal_cost,gem_cost
+castle,Guardhouse,14,28,500,0,10,0,0,0,0
+castle,Archer Tower,9,18,1000,5,5,0,0,0,0
+castle,Griffin Tower,7,17,1000,0,5,0,0,0,0
+castle,Barracks,4,8,2000,0,5,0,0,0,0
+castle,Monastery,3,6,3000,5,5,2,2,2,2
+castle,Trainings Grounds,2,4,5000,20,0,0,0,0,0
+castle,Portal of Glory,1,2,20000,0,0,10,10,10,10
+castle,Upg. Guardhouse,14,28,1000,5,5,0,0,0,0
+castle,Upg. Archer Tower,9,18,1000,5,5,0,0,0,0
+castle,Upg. Griffin Tower,7,17,1000,0,5,0,0,0,0
+castle,Upg. Barracks,4,8,2000,0,5,0,0,5,0
+castle,Upg. Monastery,3,6,1000,2,2,2,2,2,2
+castle,Upg. Trainings Grounds,2,4,3000,10,0,0,0,0,0
+castle,Upg. Portal of Glory,1,2,20000,0,0,10,10,10,10
+conflux,Magic Lantern,20,50,300,5,5,0,0,0,0
+conflux,Altar of Air,6,12,1500,0,5,0,0,0,0
+conflux,Altar of Water,6,12,1500,0,5,0,0,0,0
+conflux,Altar of Fire,5,10,2000,5,5,0,0,0,0
+conflux,Altar of Earth,4,8,2000,0,10,0,0,0,0
+conflux,Altar of Thought,2,4,3000,5,5,2,2,2,2
+conflux,Pyre,1,3,10000,10,10,10,0,0,0
+conflux,Upg. Magic Lantern,20,50,1000,0,0,0,0,0,0
+conflux,Upg. Altar of Air,6,12,1500,2,0,2,0,0,2
+conflux,Upg. Altar of Water,6,12,2000,0,5,5,0,0,0
+conflux,Upg. Altar of Fire,5,10,2000,0,5,5,0,0,0
+conflux,Upg. Altar of Earth,4,8,1000,0,0,0,5,0,0
+conflux,Upg. Altar of Thought,2,4,3000,0,0,3,3,3,3
+conflux,Upg. Pyre,1,3,15000,10,20,10,0,0,0
+cove,Nymph Waterfall,16,32,300,5,5,0,0,0,0
+cove,Shack,9,22,1000,10,0,0,0,0,0
+cove,Frigate,7,14,1000,10,0,0,0,0,0
+cove,Nest,4,11,2000,0,5,0,0,2,2
+cove,Tower of the Seas,3,6,3000,5,5,0,0,5,0
+cove,Nix Fort,2,4,,5,10,0,0,0,0
+cove,Maelstrom,1,2,15000,15,15,0,10,0,0
+cove,Upg. Nymph Waterfall,16,32,1000,0,0,0,0,0,0
+cove,Upg. Shack,9,22,1000,5,0,0,0,0,0
+cove,Upg. Frigate,7,14,1500,5,0,0,0,0,0
+cove,Gunpowder Warehouse,7,14,3000,5,5,5,5,5,5
+cove,Upg. Nest,4,11,1500,0,0,0,0,2,2
+cove,Upg. Tower of the Seas,3,6,2000,0,0,0,0,5,0
+cove,Upg. Nix Fort,2,4,3000,5,5,0,5,0,0
+cove,Upg. Maelstrom,1,2,15000,15,15,0,20,0,0
+dungeon,Warren,14,35,400,10,0,0,0,0,0
+dungeon,Harpy Loft,8,16,1000,0,0,0,0,0,0
+dungeon,Pillar of Eyes,7,14,1000,1,1,1,1,1,1
+dungeon,Chapel of Stilled Voices,4,8,2000,5,10,0,0,0,0
+dungeon,Labyrinth,3,6,4000,0,10,0,0,0,10
+dungeon,Manticore Lair,2,4,5000,5,5,5,5,0,0
+dungeon,Dragon Cave,1,2,15000,15,15,0,20,0,0
+dungeon,Upg. Warren,14,35,1000,5,0,0,0,0,0
+dungeon,Upg. Harpy Loft,8,16,1000,0,0,0,2,2,0
+dungeon,Upg. Pillar of Eyes,7,14,1000,1,1,1,1,1,1
+dungeon,Upg. Chapel of Stilled Voices,4,8,1500,5,0,0,0,0,0
+dungeon,Upg. Labyrinth,3,6,3000,0,5,0,0,0,5
+dungeon,Upg. Manticore Lair,2,4,3000,5,5,5,5,0,0
+dungeon,Upg. Dragon Cave,1,2,15000,15,15,0,20,0,0
+fortress,Gnoll Hut,12,30,400,10,0,0,0,0,0
+fortress,Lizard Den,9,18,1000,5,0,0,0,0,0
+fortress,Serpent Fly Hive,8,16,1000,5,0,2,2,0,0
+fortress,Basilisk Pit,4,8,2000,5,10,0,0,0,0
+fortress,Gorgon Lair,3,6,2500,5,5,0,0,0,0
+fortress,Wyvern Nest,2,4,3500,15,0,0,0,0,0
+fortress,Hydra Pond,1,2,10000,10,10,0,10,0,0
+fortress,Upg. Gnoll Hut,12,30,1000,10,0,0,0,0
+fortress,Upg. Lizard Den,9,18,1000,5,0,0,0,0,0
+fortress,Upg. Serpent Fly Hive,8,16,1000,0,0,2,2,0,0
+fortress,Upg. Basilisk Pit,3,6,2000,5,5,0,0,0,0
+fortress,Upg. Gorgon Lair,3,6,2000,5,5,0,0,0,0
+fortress,Upg. Wyvern Nest,2,4,3000,10,0,10,0,0,0
+fortress,Upg. Hydra Pond,1,2,15000,10,10,0,20,0,0
+inferno,Imp Crucible,15,38,300,5,5,0,0,0,0
+inferno,Hall of Sins,8,16,1000,0,5,0,0,0,0
+inferno,Kennels,5,13,1500,10,0,0,0,0,0
+inferno,Demon Gate,4,8,2000,5,5,0,0,0,0
+inferno,Hell Hole,3,6,3000,0,0,0,0,0,0
+inferno,Fire Lake,2,4,4000,0,10,3,3,0,3
+inferno,Forsaken Palace,1,2,15000,10,10,20,0,0,0
+inferno,Upg. Imp Crucible,15,38,1000,0,0,0,0,0,0
+inferno,Upg. Hall of Sins,8,16,1000,0,0,4,0,0,0
+inferno,Upg. Kennels,5,13,1500,0,0,0,4,0,0
+inferno,Upg. Demon Gate,4,8,2000,5,5,0,0,0,0
+inferno,Upg. Hell Hole,3,6,3000,0,0,5,5,0,0
+inferno,Upg. Fire Lake,2,4,3000,0,5,5,5,0,5
+inferno,Upg. Forsaken Palace,1,2,20000,5,5,20,0,0,0
+necropolis,Cursed Temple,12,30,400,5,5,0,0,0,0
+necropolis,Graveyard,8,16,1000,0,5,0,0,0,0
+necropolis,Tomb of Souls,7,14,1500,5,5,0,0,0,0
+necropolis,Estate,4,8,2000,5,5,0,0,0,0
+necropolis,Mausoleum,3,6,2000,0,5,0,4,0,0
+necropolis,Hall of Darkness,2,4,6000,10,10,0,0,0,0
+necropolis,Dragon Vault,1,2,10000,5,5,5,5,5,5
+necropolis,Upg. Cursed Temple,12,30,1000,5,5,0,0,0,0
+necropolis,Upg. Graveyard,8,16,1000,5,5,0,0,0,0
+necropolis,Upg. Tomb of Souls,7,14,1500,0,0,4,0,0,0
+necropolis,Upg. Estate,4,8,2000,10,0,0,0,10,10
+necropolis,Upg. Mausoleum,3,6,2000,0,5,0,4,0,0
+necropolis,Upg. Hall of Darkness,2,4,3000,5,5,2,2,2,2
+necropolis,Upg. Dragon Vault,1,2,15000,5,5,20,0,0,0
+rampart,Centaur Stables,14,28,500,5,0,0,0,0,0
+rampart,Dwarf Cottage,8,20,1000,5,0,0,0,0
+rampart,Homestead,7,14,1500,10,0,0,0,0,0
+rampart,Enchanted Spring,5,10,2000,0,0,0,0,10,0
+rampart,Dendroid Arches,3,6,2500,0,0,0,0,0,0
+rampart,Unicorn Glade,2,4,4000,5,5,0,0,0,10
+rampart,Dragon Cliffs,1,2,10000,0,30,0,0,20,0
+rampart,Upg. Centaur Stables,14,28,1000,5,0,0,0,0,0
+rampart,Upg. Dwarf Cottage,8,20,1000,5,0,0,0,0
+rampart,Upg. Homestead,7,14,1500,10,0,0,0,0,0
+rampart,Upg. Enchanted Spring,5,10,2000,0,0,0,0,5,0
+rampart,Upg. Dendroid Arches,3,6,1500,0,0,0,0,0,0
+rampart,Upg. Unicorn Glade,2,4,3000,0,0,0,0,0,5
+rampart,Upg. Dragon Cliffs,1,2,20000,0,30,0,0,20,0
+stronghold,Goblin Barracks,15,38,200,5,5,0,0,0,0
+stronghold,Wolf Pen,9,18,1000,10,5,0,0,0,0
+stronghold,Orc Tower,7,14,1000,5,5,0,0,0,0
+stronghold,Ogre Fort,4,8,2000,20,0,0,0,0,0
+stronghold,Cliff Nest,3,6,2500,0,10,0,0,0,0
+stronghold,Cyclops Cave,2,4,3500,0,20,0,0,0,0
+stronghold,Behemoth Lair,1,2,10000,10,10,0,0,10,0
+stronghold,Upg. Goblin Barracks,15,38,1000,5,5,0,0,0,0
+stronghold,Upg. Wolf Pen,9,18,1000,5,5,0,0,0,0
+stronghold,Upg. Orc Tower,7,14,1000,2,2,0,0,0,0
+stronghold,Upg. Ogre Fort,4,8,2000,5,5,0,0,0,5
+stronghold,Upg. Cliff Nest,3,6,2000,5,5,0,0,0,0
+stronghold,Upg. Cyclops Cave,2,4,3000,5,5,0,0,10,0
+stronghold,Upg. Behemoth Lair,1,2,15000,10,10,0,0,20,0
+tower,Workshop,16,32,300,5,5,0,0,0,0
+tower,Parapet,9,22,1000,0,10,0,0,0,0
+tower,Golem Factory,6,12,1500,5,5,0,0,0,0
+tower,Mage Tower,4,8,2000,5,5,5,5,5,5
+tower,Altar of Wishes,3,6,2500,5,5,0,0,6,6
+tower,Golden Pavilion,2,4,4000,5,5,2,2,2,2
+tower,Cloud Temple,1,2,5000,10,10,0,0,0,10
+tower,Upg. Workshop,16,32,1000,0,0,0,0,0,0
+tower,Upg. Parapet,9,22,1500,0,5,0,0,0,0
+tower,Upg. Golem Factory,6,12,1500,5,5,5,0,0,0
+tower,Upg. Mage Tower,4,8,2000,5,0,0,0,0,0
+tower,Upg. Altar of Wishes,3,6,2000,5,0,0,0,0,0
+tower,Upg. Golden Pavilion,2,4,3000,0,0,3,3,3,3
+tower,Upg. Cloud Temple,1,2,20000,5,5,0,0,0,30

@@ -1,9 +1,8 @@
-def avg_dmg(row):
+def avg_dmg(row, defense=0):
     damage_min = row["damage_min"]
     damage_max = row["damage_max"]
     attack = row["attack"]
     special = row["special"]
-    defense = 0
 
     ADD = attack - defense
 

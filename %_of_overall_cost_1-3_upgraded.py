@@ -28,7 +28,7 @@ indexes = t.index.values
 colors_in_order = [town_colors[town] for town in indexes]
 
 chart = t.plot(ax=axes[0], y=2, kind='bar', color=colors_in_order, figsize=(18, 10), xlabel="towns", ylabel="%", legend=False,
-       title=title_1, ylim=(20, 35), rot=0)
+       title=title_1, rot=0)
 
 
 tiers = (1, 3)
@@ -47,7 +47,8 @@ indexes = t_2.index.values
 colors_in_order = [town_colors[town] for town in indexes]
 
 chart_2 = t_2.plot(ax=axes[1], y=0, kind='bar', color=colors_in_order, figsize=(18, 10), xlabel="towns", ylabel="gold",
-                   legend=False, title=title_2, ylim=(6_000, 10_000), rot=0)
+                   legend=False, title=title_2, rot=0)
+
 
 
 
