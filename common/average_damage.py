@@ -8,6 +8,7 @@ def avg_dmg(row, defense=0):
 
     if "Death blow" in special:
         damage_min = 1.2 * damage_min
+        damage_max = 1.2 * damage_max
 
     if ADD >= 0:
         d_min = damage_min * (1 + 0.05 * ADD)
@@ -20,5 +21,5 @@ def avg_dmg(row, defense=0):
 
     if "twice" in special or "Ferocity" in special:
         return avg * 2
-    else:
-        return avg
+
+    return avg
